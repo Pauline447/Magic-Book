@@ -1448,7 +1448,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.898361
+  orthographic size: 6.56
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1598,7 +1598,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 5.898361
+    OrthographicSize: 6.56
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1828,10 +1828,6 @@ PrefabInstance:
     - target: {fileID: 3937097329689176012, guid: 6cd24f0afb5c7a941a42d58af08e5b53, type: 3}
       propertyPath: m_Name
       value: Book
-      objectReference: {fileID: 0}
-    - target: {fileID: 5314631597351959098, guid: 6cd24f0afb5c7a941a42d58af08e5b53, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
