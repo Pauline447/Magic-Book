@@ -259,7 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d44df5d03e2bc468952cf13482a338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 100
   topLeft: {fileID: 191988673}
   bottomRight: {fileID: 996052393}
 --- !u!114 &99688796
@@ -543,12 +542,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 732960855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73d44df5d03e2bc468952cf13482a338, type: 3}
+  m_Script: {fileID: 11500000, guid: a567119a0b3b6dc47937997a7d110f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 5
+  followSpeed: 20
   topLeft: {fileID: 1487841548}
   bottomRight: {fileID: 1533478054}
+  m_cam: {fileID: 1849023543}
+  m_cameraTargetPageTurn: {fileID: 609661347}
 --- !u!1 &890221466
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +940,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 732960858}
+        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
+        m_MethodName: SetCameraFollowTarget
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1542542256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1096,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 732960858}
+        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
+        m_MethodName: SetCameraFollowTarget
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1564424950
 MonoBehaviour:
@@ -1448,7 +1473,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.56
+  orthographic size: 6.26
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1598,7 +1623,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 6.56
+    OrthographicSize: 6.26
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1745,6 +1770,10 @@ PrefabInstance:
       propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1542542255}
+    - target: {fileID: 203000178362735980, guid: 6cd24f0afb5c7a941a42d58af08e5b53, type: 3}
+      propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 732960858}
     - target: {fileID: 2412213963218243504, guid: 6cd24f0afb5c7a941a42d58af08e5b53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
