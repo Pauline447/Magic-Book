@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChangeTextTransparancy : MonoBehaviour
 {
+    [SerializeField] float m_fadeDuration = 1f;
     private Coroutine m_fadeRoutine;
     public void ChangeText(float endValue)
     {
@@ -13,7 +14,7 @@ public class ChangeTextTransparancy : MonoBehaviour
         {
             StopCoroutine(m_fadeRoutine);
         }
-        m_fadeRoutine = StartCoroutine(Fade(text, endValue, 1f));
+        m_fadeRoutine = StartCoroutine(Fade(text, endValue, m_fadeDuration));
     }
 
     private IEnumerator Fade(TextMeshProUGUI text, float endAlpha, float duration)
