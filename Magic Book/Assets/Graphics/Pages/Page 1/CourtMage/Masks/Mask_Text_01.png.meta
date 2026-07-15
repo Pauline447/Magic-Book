@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: a266b7caf95ad31409ab4d725f300a4d
+guid: aa63708ecab40874bb75027f41528ffc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -523917878880233791
+    second: Mask_Text_01_0
+  - first:
+      213: -1858895413327762058
+    second: Mask_Text_01_1
+  - first:
+      213: -1796733266602747729
+    second: Mask_Text_01_2
+  - first:
+      213: -8102566372857684155
+    second: Mask_Text_01_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,12 +120,100 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mask_Text_01_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 679
+        width: 736
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c61ed9077baab8f0800000000000000
+      internalID: -523917878880233791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Text_01_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 697
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67deefd6870e336e0800000000000000
+      internalID: -1858895413327762058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Text_01_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 696
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa814001d98b017e0800000000000000
+      internalID: -1796733266602747729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_Text_01_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 696
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fdac820d6ed8f80800000000000000
+      internalID: -8102566372857684155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mask_Text_01_0: -523917878880233791
+      Mask_Text_01_1: -1858895413327762058
+      Mask_Text_01_2: -1796733266602747729
+      Mask_Text_01_3: -8102566372857684155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

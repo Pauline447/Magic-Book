@@ -30,7 +30,5 @@ public class ChangeTextTransparancy : MonoBehaviour
         }
 
         text.alpha = endAlpha;
-
-        StopCoroutine(m_fadeRoutine);
     }
 }

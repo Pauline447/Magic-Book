@@ -28,7 +28,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask:
-        m_Texture: {fileID: 2800000, guid: a266b7caf95ad31409ab4d725f300a4d, type: 3}
+        m_Texture: {fileID: 2800000, guid: c59d4df3a0ab2a249bffb3b7b69698f8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask4:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -46,6 +58,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
+    - _MaskStrengh1: 0
+    - _MaskStrengh2: 0.5
+    - _MaskStrengh3: 0
+    - _MaskStrengh4: 0
+    - _MaskStrength1: 0
+    - _MaskStrength2: 0
+    - _MaskStrength3: 0
+    - _MaskStrength4: 0
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
