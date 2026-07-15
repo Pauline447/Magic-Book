@@ -7,7 +7,7 @@ public class ChangeMaskMaterial : MonoBehaviour
     [SerializeField] private Material m_material;
     [SerializeField] private Graphic[] m_graphics;
 
-    public void ChangeMask(string maskName, Sprite mask, string maskStrengthName)
+    public void ChangeMask(string maskName, Sprite mask, string maskStrengthName, float duration)
     {
         if (mask == null)
             return;
@@ -45,5 +45,7 @@ public class ChangeMaskMaterial : MonoBehaviour
     {
         m_material.SetTexture("_Mask2", null);
         m_material.SetFloat("_MaskStrength2", 0f);
+        m_material.SetTexture("_Mask", null);
+        m_material.SetFloat("_MaskStrength1", 0f);
     }
 }
