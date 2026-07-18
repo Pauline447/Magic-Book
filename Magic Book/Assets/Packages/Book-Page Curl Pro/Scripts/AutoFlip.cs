@@ -74,6 +74,7 @@ namespace BookCurlPro
                         {
                             flippingStarted = false;
                             ControledBook.interactable = isBookInteractable;
+                            BookManager.Instance.ActivateBookAgain();
                             this.enabled = false;
 
                         }

@@ -1,13 +1,17 @@
+using BookCurlPro;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BookManager : MonoBehaviour
 {
-    [SerializeField] private Transform m_pageParent;
-    [SerializeField] private List<GameObject> m_pagePrefabs;
+    [SerializeField] private bool m_startIntro = false;
+    [SerializeField] private CameraMovement m_cameraMovement;
+    [SerializeField] private PlayerMovement m_playerMovement;
+    [SerializeField] private GameObject m_buttonLeft;
+    [SerializeField] private GameObject m_buttonRight;
+    [SerializeField] private AutoFlip m_autoFlip;
 
-    private int m_currentIndex = 0;
-
+    #region Singelton
     private static BookManager instance;
     public static BookManager Instance
     {
@@ -15,7 +19,7 @@ public class BookManager : MonoBehaviour
         {
             if (instance == null)
             {
-                Debug.LogError("BookManager  is null");
+                Debug.LogError("Player is null");
             }
 
             return instance;
@@ -25,29 +29,29 @@ public class BookManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Found more than one BookManager in the scene!");
+            Debug.LogWarning("Found more than one BookManager in the scnene!");
         }
 
         instance = this;
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    #endregion
+    private void Start()
     {
-        InstantiatePage(1); //Initilize Start Page
+        if(m_startIntro)
+        {
+            m_autoFlip.AutoStartFlip = true;
+            m_cameraMovement.enabled = false;
+            m_playerMovement.enabled = false;
+            m_buttonLeft.SetActive(false);
+            m_buttonRight.SetActive(false);
+        }
     }
 
-    public void InstantiatePage(int nextPageIndex)
+    public void ActivateBookAgain()
     {
-        int nextPage = nextPageIndex - 1;
-        if (nextPage == m_pagePrefabs.Count) return;
-
-        if(m_currentIndex != 0)
-        {
-            Destroy(m_pageParent.GetChild(0).gameObject);
-        }
-
-        Instantiate(m_pagePrefabs[nextPage], m_pageParent);
-        m_currentIndex = nextPage; 
+        m_cameraMovement.enabled = true;
+        m_playerMovement.enabled = true;
+        m_buttonLeft.SetActive(true);
+        m_buttonRight.SetActive(true);
     }
 }

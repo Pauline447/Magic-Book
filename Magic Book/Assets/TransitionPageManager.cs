@@ -27,10 +27,10 @@ public class TransitionPageManager : MonoBehaviour
     public void UpdatePageCounter()
     {
         m_enteredPageCounter++;
-        if (m_enteredPageCounter == 1)
+        if (m_enteredPageCounter == 2)
         {
             m_timerBeforeEventRoutine[0] = StartCoroutine(TimerBeforeEvent(2f, 0));
-            m_timerBeforeEventRoutine[1] = StartCoroutine(TimerBeforeEvent(20f, 1)); //change Village and Sky to Court Mage Page
+            m_timerBeforeEventRoutine[1] = StartCoroutine(TimerBeforeEvent(10f, 1)); //change Village and Sky to Court Mage Page
         }
     }
 

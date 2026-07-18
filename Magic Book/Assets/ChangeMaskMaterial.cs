@@ -47,5 +47,7 @@ public class ChangeMaskMaterial : MonoBehaviour
         m_material.SetFloat("_MaskStrength2", 0f);
         m_material.SetTexture("_Mask", null);
         m_material.SetFloat("_MaskStrength1", 0f);
+        m_material.SetTexture("_Mask3", null);
+        m_material.SetFloat("_MaskStrength3", 0f); 
     }
 }
