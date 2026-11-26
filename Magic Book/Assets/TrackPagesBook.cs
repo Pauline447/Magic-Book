@@ -11,7 +11,7 @@ public class TrackPagesBook : MonoBehaviour
     {
         int currentTransitionManager = m_book.CurrentPaper - 1;
        
-        if(currentTransitionManager <= m_transitionPageManagers.Length-1)
+        if(currentTransitionManager == m_transitionPageManagers.Length-1)
             m_transitionPageManagers[currentTransitionManager].UpdatePageCounter();
     }
 }

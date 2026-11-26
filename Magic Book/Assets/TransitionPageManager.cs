@@ -26,6 +26,7 @@ public class TransitionPageManager : MonoBehaviour
 
     public void UpdatePageCounter()
     {
+        Debug.Log("UpdatePageCounter");
         m_enteredPageCounter++;
         if (m_enteredPageCounter == 2)
         {
